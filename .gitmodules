@@ -1,4 +1,0 @@
-[submodule "live"]
-	path = live
-	url = https://github.com/robotframework/live/
-	branch = robocon_examples
