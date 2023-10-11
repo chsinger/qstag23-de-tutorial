@@ -2,10 +2,12 @@
 tasks:
   - name: prepare
     before: |
-      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
+      sudo cp -f /workspace/robocon-de-tutorial/.vscode/QS_Tag_Background.png /usr/share/backgrounds/xfce/xfce-verticals.png
       clear
   - name: install System
     init: |
+      yes | pyenv install 3.11.6
+      pyenv global 3.11.6
       python -m pip install --upgrade pip
       pip install -r requirements.txt
       pip install --upgrade --pre robotframework
@@ -13,7 +15,7 @@ tasks:
       npx --yes playwright install-deps
   - name: Command
     command: |
-      sudo cp -f /workspace/robocon-de-tutorial/.vscode/RBCN-DE.png /usr/share/backgrounds/xfce/xfce-stripes.png
+      sudo cp -f /workspace/robocon-de-tutorial/.vscode/QS_Tag_Background.png /usr/share/backgrounds/xfce/xfce-verticals.png
       clear
 image: gitpod/workspace-full-vnc
 ports:
