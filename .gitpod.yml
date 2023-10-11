@@ -2,7 +2,7 @@
 tasks:
   - name: prepare
     before: |
-      sudo cp -f QS_Tag_Background.png /usr/share/backgrounds/xfce/xfce-verticals.png
+      sudo cp -f /workspace/qsta23-de-tutorial/.vscode/QS_Tag_Background.png /usr/share/backgrounds/xfce/xfce-verticals.png
       clear
   - name: install System
     init: |
@@ -15,7 +15,7 @@ tasks:
       npx --yes playwright install-deps
   - name: Command
     command: |
-      sudo cp -f QS_Tag_Background.png /usr/share/backgrounds/xfce/xfce-verticals.png
+      sudo cp -f /workspace/qsta23-de-tutorial/.vscode/QS_Tag_Background.png /usr/share/backgrounds/xfce/xfce-verticals.png
       clear
 image: gitpod/workspace-full-vnc
 ports:
